@@ -49,9 +49,9 @@ To compile and run this shell, you need:
 
 - **seek.c**: Implements search functionality within the shell.
 
-### Supported Commands
+# Supported Commands
 
-1. **hop**
+## 1. **hop**
    The hop command changes the current working directory of the shell and prints the full path of the new directory after the change. It supports directory paths as arguments and provides several useful flags for directory navigation.
 
 ### Supported Flags
@@ -74,7 +74,7 @@ If any flag is not specified,the command changes the directory to the user's hom
 - ` </path> `
 Changes the directory to the specified path
 
-2. **reveal**
+## 2. **reveal**
    The reveal command lists all the files and directories in the specified directories in lexicographic order (default reveal does not show hidden files).It supports both relative and absolute paths.
 
 ### Supported Flags
@@ -86,7 +86,7 @@ Changes the directory to the specified path
    - ```-a``` : displays all files, including hidden files 
 
 
-3. **log**
+## 3. **log**
 
    Stores the history of the latest 15 commands given to shell
 
@@ -96,7 +96,7 @@ Changes the directory to the specified path
 
 - ```execute <command_no.>``` : Execute the command at position in log (ordered from most recent to oldest)
 
-4. **seek** 
+## 4. **seek** 
 
    The ‘seek’ command looks for a file/directory in the specified target directory (or current if no directory is specified). It returns a list of relative paths (from target directory) of all matching files/directories (files in green and directories in blue) separated with a newline character.
 
@@ -110,7 +110,7 @@ Changes the directory to the specified path
 
 
 
-5. **proclore**
+## 5. **proclore**
 
    The proclore command details information about processes on a system. It provides crucial process details and, when used without arguments, displays information about the shell itself.
 
